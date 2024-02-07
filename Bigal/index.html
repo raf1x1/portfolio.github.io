@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Barlow Condensed', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            text-align: center;
+            padding: 4em 0;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 6px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        h1, h2, h3 {
+            color: #fff;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: auto;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 0.5s forwards;
+        }
+
+        .skills {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .portfolio-item {
+            margin-bottom: 20px;
+        }
+
+
+        .contact {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .contact img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+        }
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .contact a:hover {
+            color: #4CAF50; 
+        }
+
+        .video-section {
+            text-align: center;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rafael Ryan Bigal</h1>
+        <p>Web developer</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#hobby">Hobby</a>
+        </nav>
+    </header>
+
+    <section class="profile" id="home">
+        <img src="bigal.jpg" alt="Your Name Profile Picture">
+        <h2>About Me</h2>
+        <p>Hello there! I'm a budding web developer excited about creating awesome websites, especially in the world of online gaming. I enjoy using HTML and CSS to make websites both beautiful and functional. I'm also learning about JavaScript for cool interactive features and exploring other tools like React and Vue.js.
+
+            As a beginner, I'm eager to delve into the basics of web development, working towards a solid understanding of how things come together. I'm particularly fascinated by the endless possibilities that online gaming offers, and I'm gradually building my skills to contribute to this exciting field.
+            
+            While I'm still in the early stages of my web development journey, I'm keen on staying updated with the latest trends. I'm curious about technologies like WebAssembly and Progressive Web Apps, and I'm excited to see how they can enhance the websites I build.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Honing Skills</h2>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Responsive Design</li>
+            <li><a href="https://streamable.com/u2pie9" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: none;">Video Editing</a></li>
+          
+        </ul>
+    </section>
+
+    <section id="hobby">
+        <h2>Hobby</h2>
+        <p>When I'm not coding, you can find me immersed in the captivating world of online games, where I eagerly explore new adventures, devise intricate strategies, and engage with diverse gaming communities. Whether navigating fantastical realms, participating in competitive multiplayer battles, or uncovering hidden treasures in expansive virtual landscapes, my time spent gaming serves as both a source of relaxation and inspiration for my web development endeavors. This dual passion not only fuels my creativity but also deepens my understanding of user experiences, shaping the way I approach website design to resonate with fellow gaming enthusiasts.</p>
+    </section>
+
+
+    <section>
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email: bigalryan225@gmail.com</p>
+        <div class="contact">
+            <a href="https://www.facebook.com/akosiyapyap/" target="_blank" rel="noopener noreferrer"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/usergot75hz/" target="_blank" rel="noopener noreferrer"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Additional Information</h2>
+        <p>Click on the <strong>"Video Editing"</strong> skill to view related content. Added Basic Video Edit !</p>
+    </section>
+
+    <section class="video-section">
+        <h2>Video for showcase</h2>
+        <p>Check out this video showcasing some video</p>
+        <video controls>
+            <source src="rickroll.mp4" type="video/mp4">
+        </video>
+    </section>
+</body>
+</html>
